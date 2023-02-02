@@ -1,0 +1,8 @@
+DROP TABLE IF EXISTS users;
+CREATE TABLE users (
+  id         SERIAL PRIMARY KEY,
+  user_name VARCHAR(300),
+  created  TIMESTAMP
+);
+
+INSERT INTO users VALUES (1, 'Little Dot', TIMESTAMP '2022-01-10 00:51:14');
