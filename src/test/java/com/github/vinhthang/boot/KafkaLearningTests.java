@@ -34,10 +34,10 @@ import static org.assertj.core.api.Assertions.tuple;
 @Testcontainers
 public class KafkaLearningTests {
     private static final DockerImageName KAFKA_TEST_IMAGE = DockerImageName.parse(
-            "confluentinc/cp-kafka:6.2.1"
+            "confluentinc/cp-kafka:latest"
     );
     private static final DockerImageName ZOOKEEPER_TEST_IMAGE = DockerImageName.parse(
-            "confluentinc/cp-zookeeper:6.1.9"
+            "confluentinc/cp-zookeeper:latest"
     );
     @Test
     public void testUsage() throws Exception {
